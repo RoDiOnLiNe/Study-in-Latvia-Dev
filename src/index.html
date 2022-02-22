@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="wrapper">
+    @@include('html/header.html',{})
+    <main class="page">
+        <section class="page__block-search block-search">
+          <div class="block-search__container container">
+            <div class="block-search__body">
+              <div class="block-search__content">
+                <h1 class="block-search__title">Study in Latvia</h1>
+                <p class="block-search__text">
+                  National guide to higher education in Latvua for international
+                  students
+                </p>
+                <form class="search" action="">
+                    <img class="search__icon" src="/img/icons8-search-32.png" alt="">
+                  <input class="search__text" type="text" placeholder="Programmes title or keywords" />
+                  <button class="search__button" type="submit">Search</button>
+                </form>
+              </div>
+              <div class="block-search__image"></div>
+            </div>
+          </div>
+        </section>
+      <section class="page__plan plan">
+        <div class="plan__container container">
+          <div class="plan__img-box">
+            <img class="plan__img" src="img/FFF.jpg" alt="">
+          </div>
+          <div class="plan__content">
+            <h2 class="plan__title">Plan your studies in Latvia</h2>
+            <div class="plan__text">This section provides the most essential information on the topcs concerning entarance
+              requirements, admission, tuition fees, scholarships, visa and residence permit. </div>
+            
+            <ul class="plan__list-block">
+              <li class="list-block__item">
+               <img class="list-block_img" src="img/1.jpg" alt="" >
+                <div class="list-block_text" >Entrance requiements</div>
+                <button class="list-block__btn" data-src="img/img_mountains.jpg"></button>
+              </li>
+              <li class="list-block__item">
+               <img class="list-block_img" src="img/2.jpg" alt="" >
+                <div class="list-block_text" >Admission</div>
+                <button class="list-block__btn" data-src="img/img_lights.jpg"></button>
+              </li>
+              <li class="list-block__item">
+               <img class="list-block_img" src="img/3.jpg" alt="" >
+                <div class="list-block_text" >Tuition fees</div>
+                <button class="list-block__btn" data-src="img/img_snow.jpg"></button>
+              </li>
+              <li class="list-block__item">
+               <img class="list-block_img" src="img/4.jpg" alt="" >
+                <div class="list-block_text" >Scholarships</div>
+                <button class="list-block__btn" data-src="img/img_nature.jpg"></button>
+              </li>
+            </ul>
+          
+
+          </div>
+        </div>
+           </section>
+      </main>
+    @@include('html/footer.html',{})
+    </div>
+    <script src="js/app.min.js"></script>
+  </body>
+</html>
+
+
